@@ -11,8 +11,8 @@ jobs:
     - name: Generate Figlet Text
       run: |
         figlet "Hello, World!" > figlet.txt
-        git config user.name "Your Name"
-        git config user.email "youremail@example.com"
+        git config user.name "Bhavin Thakur"
+        git config user.email "bhavinthakurshan@gmail.com"
         git add figlet.txt
-        git commit -m "Add figlet text"
+        git commit -m "Photron"
         git push
