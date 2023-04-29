@@ -1,0 +1,16 @@
+name: Display Figlet on Timeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  figlet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install Figlet
+        run: sudo apt-get install figlet
+      - name: Display Figlet
+        run: figlet "Photron"
